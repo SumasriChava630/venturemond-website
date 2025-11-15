@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===============================
+   THEME VARIABLES (GLOBAL)
+================================ */
+:root {
+  --bg-dark: #0a0a0f;
+  --bg-darker: #050507;
+  --bg-card: #11121a;
+  --bg-card-hover: #181a22;
+
+  --text-light: #f8f9fa;
+  --text-muted: #b7b7c3;
+
+  --green: #00ff88;
+  --green-dark: #00cc6b;
+  --green-glow: rgba(0, 255, 136, 0.4);
+}
+
+/* ===============================
+   GLOBAL RESET + DARK MODE
+================================ */
+html, body {
+  background-color: var(--bg-dark) !important;
+  color: var(--text-light) !important;
+  font-family: ui-sans-serif, system-ui;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Prevent white backgrounds anywhere */
+section, div, main, header, footer {
+  background-color: transparent;
+}
+
+/* Container override */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ===============================
+   NAVBAR LINK STYLING
+================================ */
+.nav-link {
+  color: var(--text-light) !important;
+  transition: 0.3s ease;
+  opacity: 0.8;
+}
+
+.nav-link:hover {
+  color: var(--green) !important;
+  opacity: 1;
+}
+
+/* ===============================
+   GREEN BUTTON
+================================ */
+.btn-green {
+  background: var(--green);
+  color: #000;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.btn-green:hover {
+  background: var(--green-dark);
+  transform: translateY(-3px);
+}
+
+/* ===============================
+   GLOWING CARD EFFECT
+================================ */
+.card-glow {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  transition: 0.35s ease;
+}
+
+.card-glow:hover {
+  background: var(--bg-card-hover);
+  box-shadow: 0 0 25px var(--green-glow);
+  transform: translateY(-6px);
+}
+
+/* ===============================
+   SCROLL REVEAL ANIMATION
+================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===============================
+   SPIN ANIMATIONS
+================================ */
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 6s linear infinite;
+  }
+  .animate-spin-slower {
+    animation: spin 12s linear infinite;
+  }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ===============================
+   SHIMMER BUTTON (Get in Touch, Our Work)
+================================ */
+.shimmer-btn {
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+  position: relative;
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.shimmer-effect {
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.9),
+    transparent
+  );
+  animation: shimmer 2.5s infinite;
+  filter: blur(4px);
+}
+
+@keyframes shimmer {
+  0% { left: -150%; }
+  100% { left: 150%; }
+}
+
+/* ===============================
+   ULTRA 3D BUTTON EFFECT
+================================ */
+.sheen {
+  position: absolute;
+  top: -40%;
+  left: -50%;
+  width: 40%;
+  height: 180%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.85) 50%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(18deg) translateX(-100%);
+  filter: blur(10px);
+  transition: transform 900ms cubic-bezier(.2,.9,.3,1), opacity 400ms;
+  opacity: 0;
+}
+
+.group:hover .sheen {
+  transform: rotate(18deg) translateX(220%);
+  opacity: 1;
+}
+
+.group > .absolute.-inset-1 {
+  transition: opacity 400ms, transform 400ms;
+}
+
+.group:hover > .relative.z-10 {
+  transform: translateY(-6px) scale(1.02);
+  transition: transform 260ms cubic-bezier(.2,.9,.3,1);
+}
+
+.group { 
+  perspective: 900px; 
+}
+
+.z-5 { z-index: 5; }
+
+/* ===============================
+   UTILITY FIXES
+================================ */
+
+/* Fix backdrop blur for navbar */
+.backdrop-blur-md {
+  backdrop-filter: blur(8px);
+}

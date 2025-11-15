@@ -1,0 +1,50 @@
+[00:00:02.256] Server  LOG      ✓ Ready in 1592ms
+[00:00:05.316] Server  LOG      ○ Compiling / ...
+[00:00:07.878] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.438] Browser WARN    Image with src "/images/about/about1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:24.149] Server  LOG     Received: {}
+[00:00:25.944] Server  LOG     Sheetbest status: 403
+[00:00:25.948] Server  ERROR   Sheetbest error: "{\"detail\":\"Connection to the origin sheet denied. Please verify its permissions.\"}"
+[00:00:25.964] Server  ERROR   C:\Users\SUMA SRI\Downloads\venturemond-website (1)\venturemond-website\venturemond-website\.next\dev\server\chunks\[root-of-the-server]__fc1beebe._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:26.044] Server  ERROR   C:\Users\SUMA SRI\Downloads\venturemond-website (1)\venturemond-website\venturemond-website\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:26.067] Server  ERROR   C:\Users\SUMA SRI\Downloads\venturemond-website (1)\venturemond-website\venturemond-website\.next\dev\server\chunks\74827_next_dist_cf380d3b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:26.085] Server  ERROR   C:\Users\SUMA SRI\Downloads\venturemond-website (1)\venturemond-website\venturemond-website\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:26.109] Server  ERROR   C:\Users\SUMA SRI\Downloads\venturemond-website (1)\venturemond-website\venturemond-website\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:26.114] Server  ERROR   C:\Users\SUMA SRI\Downloads\venturemond-website (1)\venturemond-website\venturemond-website\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:26.116] Server  ERROR   C:\Users\SUMA SRI\Downloads\venturemond-website (1)\venturemond-website\venturemond-website\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:26.122] Server  ERROR   C:\Users\SUMA SRI\Downloads\venturemond-website (1)\venturemond-website\venturemond-website\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:26.130] Server  ERROR   C:\Users\SUMA SRI\Downloads\venturemond-website (1)\venturemond-website\venturemond-website\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:26.134] Server  ERROR   SERVER ERROR: Error: {"detail":"Connection to the origin sheet denied. Please verify its permissions."}
+[00:09:22.070] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:27.714] Browser WARN    Image with src "/images/about/about1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:09:56.661] Server  LOG     Received: {}
+[00:09:59.306] Server  LOG     Sheetbest status: 200
+[00:11:21.992] Server  LOG     Received: {}
+[00:11:23.381] Server  LOG     Sheetbest status: 200
+[00:47:18.850] Browser WARN    Image with src "/images/project/alpha.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:47:18.850] Browser WARN    Image with src "/images/project/gamma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:47:18.962] Browser WARN    Image with src "/images/project/beta.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:01:52.628] Server  LOG      ✓ Compiled in 24.1s
+[01:01:57.040] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:57.343] Browser WARN    Image with src "/images/project/alpha.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:01:57.343] Browser WARN    Image with src "/images/project/beta.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:01:57.343] Browser WARN    Image with src "/images/project/gamma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:01:57.343] Browser WARN    Image with src "/images/about/about1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:08:37.620] Server  LOG      ✓ Compiled in 10.6s
+[01:16:56.324] Server  LOG      ✓ Compiled in 7.6s
+[01:17:53.200] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:17:53.577] Browser WARN    Image with src "/images/project/alpha.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:17:53.577] Browser WARN    Image with src "/images/project/beta.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:17:53.577] Browser WARN    Image with src "/images/project/gamma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:17:53.577] Browser WARN    Image with src "/images/about/about1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:18:45.850] Server  LOG      ✓ Compiled in 3.2s
+[01:18:50.393] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:50.691] Browser WARN    Image with src "/images/project/alpha.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:18:50.691] Browser WARN    Image with src "/images/project/beta.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:18:50.691] Browser WARN    Image with src "/images/project/gamma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:18:50.691] Browser WARN    Image with src "/images/about/about1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:19:23.329] Server  LOG     Received: {}
+[01:19:26.137] Server  LOG     Sheetbest status: 200
+[01:23:32.129] Server  LOG        Reload env: .env.local
+[01:23:37.067] Server  LOG        Reload env: .env.local
+[01:23:39.418] Server  LOG      ✓ Compiled in 5.2s

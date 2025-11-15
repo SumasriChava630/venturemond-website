@@ -1,0 +1,15 @@
+__turbopack_load_page_chunks__("/_app", [
+  "static/chunks/74827_next_dist_compiled_a9706b49._.js",
+  "static/chunks/74827_next_dist_shared_lib_11597aee._.js",
+  "static/chunks/74827_next_dist_client_d6a2c343._.js",
+  "static/chunks/74827_next_dist_a9739d36._.js",
+  "static/chunks/74827_next_app_da9ec9fe.js",
+  "static/chunks/[next]_entry_page-loader_ts_c776f4de._.js",
+  "static/chunks/74827_react_e36f954a._.js",
+  "static/chunks/74827_react-dom_cjs_react-dom_development_1a1269fc.js",
+  "static/chunks/74827_react-dom_c3b08081._.js",
+  "static/chunks/74827_581165f8._.js",
+  "static/chunks/[root-of-the-server]__4898a0fb._.js",
+  "static/chunks/9131f_turemond-website (1)_venturemond-website_venturemond-website_pages__app_2da965e7._.js",
+  "static/chunks/f940a_turemond-website (1)_venturemond-website_venturemond-website_pages__app_9cc1bbd0._.js"
+])

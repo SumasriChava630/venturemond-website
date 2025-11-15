@@ -1,0 +1,541 @@
+module.exports = [
+"[project]/Downloads/venturemond-website/components/ScrollReveal.jsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>ScrollReveal
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/venturemond-website/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/venturemond-website/node_modules/framer-motion/dist/es/render/dom/motion.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$hooks$2f$use$2d$animation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/venturemond-website/node_modules/framer-motion/dist/es/animation/hooks/use-animation.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$react$2d$intersection$2d$observer$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/venturemond-website/node_modules/react-intersection-observer/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/venturemond-website/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+'use client';
+;
+;
+;
+;
+function ScrollReveal({ children, className = '', delay = 0 }) {
+    const controls = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$hooks$2f$use$2d$animation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAnimation"])();
+    const [ref, inView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$react$2d$intersection$2d$observer$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useInView"])({
+        threshold: 0.15,
+        triggerOnce: true
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (inView) {
+            controls.start('visible');
+        }
+    }, [
+        controls,
+        inView
+    ]);
+    const variants = {
+        hidden: {
+            opacity: 0,
+            y: 30,
+            scale: 0.995
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            transition: {
+                duration: 0.7,
+                delay
+            }
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+        ref: ref,
+        initial: "hidden",
+        animate: controls,
+        variants: variants,
+        className: className,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/Downloads/venturemond-website/components/ScrollReveal.jsx",
+        lineNumber: 23,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/Downloads/venturemond-website/node_modules/framer-motion/dist/es/animation/hooks/animation-controls.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "animationControls",
+    ()=>animationControls
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/venturemond-website/node_modules/framer-motion/dist/es/utils/errors.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$setters$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/venturemond-website/node_modules/framer-motion/dist/es/render/utils/setters.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/venturemond-website/node_modules/framer-motion/dist/es/animation/interfaces/visual-element.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+function stopAnimation(visualElement) {
+    visualElement.values.forEach((value)=>value.stop());
+}
+/**
+ * @public
+ */ function animationControls() {
+    /**
+     * Track whether the host component has mounted.
+     */ let hasMounted = false;
+    /**
+     * A collection of linked component animation controls.
+     */ const subscribers = new Set();
+    const controls = {
+        subscribe (visualElement) {
+            subscribers.add(visualElement);
+            return ()=>void subscribers.delete(visualElement);
+        },
+        start (definition, transitionOverride) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invariant"])(hasMounted, "controls.start() should only be called after a component has mounted. Consider calling within a useEffect hook.");
+            const animations = [];
+            subscribers.forEach((visualElement)=>{
+                animations.push((0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["animateVisualElement"])(visualElement, definition, {
+                    transitionOverride
+                }));
+            });
+            return Promise.all(animations);
+        },
+        set (definition) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invariant"])(hasMounted, "controls.set() should only be called after a component has mounted. Consider calling within a useEffect hook.");
+            return subscribers.forEach((visualElement)=>{
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$setters$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["setValues"])(visualElement, definition);
+            });
+        },
+        stop () {
+            subscribers.forEach((visualElement)=>{
+                stopAnimation(visualElement);
+            });
+        },
+        mount () {
+            hasMounted = true;
+            return ()=>{
+                hasMounted = false;
+                controls.stop();
+            };
+        }
+    };
+    return controls;
+}
+;
+}),
+"[project]/Downloads/venturemond-website/node_modules/framer-motion/dist/es/animation/hooks/use-animation.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useAnimation",
+    ()=>useAnimation,
+    "useAnimationControls",
+    ()=>useAnimationControls
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$hooks$2f$animation$2d$controls$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/venturemond-website/node_modules/framer-motion/dist/es/animation/hooks/animation-controls.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/venturemond-website/node_modules/framer-motion/dist/es/utils/use-constant.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$isomorphic$2d$effect$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/venturemond-website/node_modules/framer-motion/dist/es/utils/use-isomorphic-effect.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+/**
+ * Creates `AnimationControls`, which can be used to manually start, stop
+ * and sequence animations on one or more components.
+ *
+ * The returned `AnimationControls` should be passed to the `animate` property
+ * of the components you want to animate.
+ *
+ * These components can then be animated with the `start` method.
+ *
+ * ```jsx
+ * import * as React from 'react'
+ * import { motion, useAnimation } from 'framer-motion'
+ *
+ * export function MyComponent(props) {
+ *    const controls = useAnimation()
+ *
+ *    controls.start({
+ *        x: 100,
+ *        transition: { duration: 0.5 },
+ *    })
+ *
+ *    return <motion.div animate={controls} />
+ * }
+ * ```
+ *
+ * @returns Animation controller with `start` and `stop` methods
+ *
+ * @public
+ */ function useAnimationControls() {
+    const controls = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useConstant"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$hooks$2f$animation$2d$controls$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["animationControls"]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$isomorphic$2d$effect$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useIsomorphicLayoutEffect"])(controls.mount, []);
+    return controls;
+}
+const useAnimation = useAnimationControls;
+;
+}),
+"[project]/Downloads/venturemond-website/node_modules/react-intersection-observer/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "InView",
+    ()=>InView,
+    "defaultFallbackInView",
+    ()=>defaultFallbackInView,
+    "observe",
+    ()=>observe,
+    "useInView",
+    ()=>useInView,
+    "useOnInView",
+    ()=>useOnInView
+]);
+// src/InView.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/venturemond-website/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+"use client";
+var __defProp = Object.defineProperty;
+var __defNormalProp = (obj, key, value)=>key in obj ? __defProp(obj, key, {
+        enumerable: true,
+        configurable: true,
+        writable: true,
+        value
+    }) : obj[key] = value;
+var __publicField = (obj, key, value)=>__defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+;
+// src/observe.ts
+var observerMap = /* @__PURE__ */ new Map();
+var RootIds = /* @__PURE__ */ new WeakMap();
+var rootId = 0;
+var unsupportedValue;
+function defaultFallbackInView(inView) {
+    unsupportedValue = inView;
+}
+function getRootId(root) {
+    if (!root) return "0";
+    if (RootIds.has(root)) return RootIds.get(root);
+    rootId += 1;
+    RootIds.set(root, rootId.toString());
+    return RootIds.get(root);
+}
+function optionsToId(options) {
+    return Object.keys(options).sort().filter((key)=>options[key] !== void 0).map((key)=>{
+        return `${key}_${key === "root" ? getRootId(options.root) : options[key]}`;
+    }).toString();
+}
+function createObserver(options) {
+    const id = optionsToId(options);
+    let instance = observerMap.get(id);
+    if (!instance) {
+        const elements = /* @__PURE__ */ new Map();
+        let thresholds;
+        const observer = new IntersectionObserver((entries)=>{
+            entries.forEach((entry)=>{
+                var _a2;
+                const inView = entry.isIntersecting && thresholds.some((threshold)=>entry.intersectionRatio >= threshold);
+                if (options.trackVisibility && typeof entry.isVisible === "undefined") {
+                    entry.isVisible = inView;
+                }
+                (_a2 = elements.get(entry.target)) == null ? void 0 : _a2.forEach((callback)=>{
+                    callback(inView, entry);
+                });
+            });
+        }, options);
+        thresholds = observer.thresholds || (Array.isArray(options.threshold) ? options.threshold : [
+            options.threshold || 0
+        ]);
+        instance = {
+            id,
+            observer,
+            elements
+        };
+        observerMap.set(id, instance);
+    }
+    return instance;
+}
+function observe(element, callback, options = {}, fallbackInView = unsupportedValue) {
+    if (typeof window.IntersectionObserver === "undefined" && fallbackInView !== void 0) {
+        const bounds = element.getBoundingClientRect();
+        callback(fallbackInView, {
+            isIntersecting: fallbackInView,
+            target: element,
+            intersectionRatio: typeof options.threshold === "number" ? options.threshold : 0,
+            time: 0,
+            boundingClientRect: bounds,
+            intersectionRect: bounds,
+            rootBounds: bounds
+        });
+        return ()=>{};
+    }
+    const { id, observer, elements } = createObserver(options);
+    const callbacks = elements.get(element) || [];
+    if (!elements.has(element)) {
+        elements.set(element, callbacks);
+    }
+    callbacks.push(callback);
+    observer.observe(element);
+    return function unobserve() {
+        callbacks.splice(callbacks.indexOf(callback), 1);
+        if (callbacks.length === 0) {
+            elements.delete(element);
+            observer.unobserve(element);
+        }
+        if (elements.size === 0) {
+            observer.disconnect();
+            observerMap.delete(id);
+        }
+    };
+}
+// src/InView.tsx
+function isPlainChildren(props) {
+    return typeof props.children !== "function";
+}
+var InView = class extends __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"] {
+    constructor(props){
+        super(props);
+        __publicField(this, "node", null);
+        __publicField(this, "_unobserveCb", null);
+        __publicField(this, "lastInView");
+        __publicField(this, "handleNode", (node)=>{
+            if (this.node) {
+                this.unobserve();
+                if (!node && !this.props.triggerOnce && !this.props.skip) {
+                    this.setState({
+                        inView: !!this.props.initialInView,
+                        entry: void 0
+                    });
+                    this.lastInView = this.props.initialInView;
+                }
+            }
+            this.node = node ? node : null;
+            this.observeNode();
+        });
+        __publicField(this, "handleChange", (inView, entry)=>{
+            const previousInView = this.lastInView;
+            this.lastInView = inView;
+            if (previousInView === void 0 && !inView) {
+                return;
+            }
+            if (inView && this.props.triggerOnce) {
+                this.unobserve();
+            }
+            if (!isPlainChildren(this.props)) {
+                this.setState({
+                    inView,
+                    entry
+                });
+            }
+            if (this.props.onChange) {
+                this.props.onChange(inView, entry);
+            }
+        });
+        this.state = {
+            inView: !!props.initialInView,
+            entry: void 0
+        };
+        this.lastInView = props.initialInView;
+    }
+    componentDidMount() {
+        this.unobserve();
+        this.observeNode();
+    }
+    componentDidUpdate(prevProps) {
+        if (prevProps.rootMargin !== this.props.rootMargin || prevProps.root !== this.props.root || prevProps.threshold !== this.props.threshold || prevProps.skip !== this.props.skip || prevProps.trackVisibility !== this.props.trackVisibility || prevProps.delay !== this.props.delay) {
+            this.unobserve();
+            this.observeNode();
+        }
+    }
+    componentWillUnmount() {
+        this.unobserve();
+    }
+    observeNode() {
+        if (!this.node || this.props.skip) return;
+        const { threshold, root, rootMargin, trackVisibility, delay, fallbackInView } = this.props;
+        if (this.lastInView === void 0) {
+            this.lastInView = this.props.initialInView;
+        }
+        this._unobserveCb = observe(this.node, this.handleChange, {
+            threshold,
+            root,
+            rootMargin,
+            // @ts-expect-error
+            trackVisibility,
+            delay
+        }, fallbackInView);
+    }
+    unobserve() {
+        if (this._unobserveCb) {
+            this._unobserveCb();
+            this._unobserveCb = null;
+        }
+    }
+    render() {
+        const { children } = this.props;
+        if (typeof children === "function") {
+            const { inView, entry } = this.state;
+            return children({
+                inView,
+                entry,
+                ref: this.handleNode
+            });
+        }
+        const { as, triggerOnce, threshold, root, rootMargin, onChange, skip, trackVisibility, delay, initialInView, fallbackInView, ...props } = this.props;
+        return __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](as || "div", {
+            ref: this.handleNode,
+            ...props
+        }, children);
+    }
+};
+;
+function useInView({ threshold, delay, trackVisibility, rootMargin, root, triggerOnce, skip, initialInView, fallbackInView, onChange } = {}) {
+    var _a2;
+    const [ref, setRef] = __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](null);
+    const callback = __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](onChange);
+    const lastInViewRef = __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](initialInView);
+    const [state, setState] = __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"]({
+        inView: !!initialInView,
+        entry: void 0
+    });
+    callback.current = onChange;
+    __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        if (lastInViewRef.current === void 0) {
+            lastInViewRef.current = initialInView;
+        }
+        if (skip || !ref) return;
+        let unobserve;
+        unobserve = observe(ref, (inView, entry)=>{
+            const previousInView = lastInViewRef.current;
+            lastInViewRef.current = inView;
+            if (previousInView === void 0 && !inView) {
+                return;
+            }
+            setState({
+                inView,
+                entry
+            });
+            if (callback.current) callback.current(inView, entry);
+            if (entry.isIntersecting && triggerOnce && unobserve) {
+                unobserve();
+                unobserve = void 0;
+            }
+        }, {
+            root,
+            rootMargin,
+            threshold,
+            // @ts-expect-error
+            trackVisibility,
+            delay
+        }, fallbackInView);
+        return ()=>{
+            if (unobserve) {
+                unobserve();
+            }
+        };
+    }, // We break the rule here, because we aren't including the actual `threshold` variable
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [
+        // If the threshold is an array, convert it to a string, so it won't change between renders.
+        Array.isArray(threshold) ? threshold.toString() : threshold,
+        ref,
+        root,
+        rootMargin,
+        triggerOnce,
+        skip,
+        trackVisibility,
+        fallbackInView,
+        delay
+    ]);
+    const entryTarget = (_a2 = state.entry) == null ? void 0 : _a2.target;
+    const previousEntryTarget = __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](void 0);
+    if (!ref && entryTarget && !triggerOnce && !skip && previousEntryTarget.current !== entryTarget) {
+        previousEntryTarget.current = entryTarget;
+        setState({
+            inView: !!initialInView,
+            entry: void 0
+        });
+        lastInViewRef.current = initialInView;
+    }
+    const result = [
+        setRef,
+        state.inView,
+        state.entry
+    ];
+    result.ref = result[0];
+    result.inView = result[1];
+    result.entry = result[2];
+    return result;
+}
+;
+var _a, _b;
+var useSyncEffect = (_b = (_a = __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useInsertionEffect"]) != null ? _a : __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLayoutEffect"]) != null ? _b : __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"];
+var useOnInView = (onIntersectionChange, { threshold, root, rootMargin, trackVisibility, delay, triggerOnce, skip } = {})=>{
+    const onIntersectionChangeRef = __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](onIntersectionChange);
+    const observedElementRef = __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](null);
+    const observerCleanupRef = __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](void 0);
+    const lastInViewRef = __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](void 0);
+    useSyncEffect(()=>{
+        onIntersectionChangeRef.current = onIntersectionChange;
+    }, [
+        onIntersectionChange
+    ]);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$venturemond$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"]((element)=>{
+        const cleanupExisting = ()=>{
+            if (observerCleanupRef.current) {
+                const cleanup = observerCleanupRef.current;
+                observerCleanupRef.current = void 0;
+                cleanup();
+            }
+        };
+        if (element === observedElementRef.current) {
+            return observerCleanupRef.current;
+        }
+        if (!element || skip) {
+            cleanupExisting();
+            observedElementRef.current = null;
+            lastInViewRef.current = void 0;
+            return;
+        }
+        cleanupExisting();
+        observedElementRef.current = element;
+        let destroyed = false;
+        const destroyObserver = observe(element, (inView, entry)=>{
+            const previousInView = lastInViewRef.current;
+            lastInViewRef.current = inView;
+            if (previousInView === void 0 && !inView) {
+                return;
+            }
+            onIntersectionChangeRef.current(inView, entry);
+            if (triggerOnce && inView) {
+                stopObserving();
+            }
+        }, {
+            threshold,
+            root,
+            rootMargin,
+            trackVisibility,
+            delay
+        });
+        function stopObserving() {
+            if (destroyed) return;
+            destroyed = true;
+            destroyObserver();
+            observedElementRef.current = null;
+            observerCleanupRef.current = void 0;
+            lastInViewRef.current = void 0;
+        }
+        observerCleanupRef.current = stopObserving;
+        return observerCleanupRef.current;
+    }, [
+        Array.isArray(threshold) ? threshold.toString() : threshold,
+        root,
+        rootMargin,
+        trackVisibility,
+        delay,
+        triggerOnce,
+        skip
+    ]);
+};
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+];
+
+//# sourceMappingURL=Downloads_venturemond-website_490cba00._.js.map
