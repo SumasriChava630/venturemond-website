@@ -11,6 +11,10 @@
   "dependencies": {
     "clsx": "^1.2.1",
     "framer-motion": "^10.18.0",
+<<<<<<< HEAD
+=======
+    "googleapis": "^166.0.0",
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
     "next": "^16.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

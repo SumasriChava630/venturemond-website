@@ -3,11 +3,20 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
+<<<<<<< HEAD
 export default function ContactPage() {
   const [activeForm, setActiveForm] = useState("contact")
   const [darkMode, setDarkMode] = useState(false)
   const [status, setStatus] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
+=======
+
+export default function ContactPage() {
+  const [activeForm, setActiveForm] = useState("contact") // "contact" or "waitlist"
+  const [darkMode, setDarkMode] = useState(false)
+  const [focused, setFocused] = useState("")
+  const [status, setStatus] = useState("")
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
 
   // Contact Form State
   const [contactForm, setContactForm] = useState({
@@ -67,7 +76,10 @@ export default function ContactPage() {
   const handleContactSubmit = async (e) => {
     e.preventDefault()
     setStatus("Sending...")
+<<<<<<< HEAD
     setIsSubmitting(true)
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
 
     try {
       const res = await fetch("/api/contact", {
@@ -77,7 +89,11 @@ export default function ContactPage() {
       })
 
       if (res.ok) {
+<<<<<<< HEAD
         setStatus("✅ Message sent successfully! We'll get back to you soon.")
+=======
+        setStatus("Message Sent ✅")
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
         setContactForm({
           name: "",
           email: "",
@@ -88,6 +104,7 @@ export default function ContactPage() {
           budget: "",
           timeline: ""
         })
+<<<<<<< HEAD
         setTimeout(() => setStatus(""), 5000)
       } else {
         const errorData = await res.json()
@@ -100,13 +117,26 @@ export default function ContactPage() {
       setTimeout(() => setStatus(""), 5000)
     } finally {
       setIsSubmitting(false)
+=======
+        setTimeout(() => setStatus(""), 3000)
+      } else {
+        setStatus("Error ❌")
+        setTimeout(() => setStatus(""), 3000)
+      }
+    } catch {
+      setStatus("Error ❌")
+      setTimeout(() => setStatus(""), 3000)
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
     }
   }
 
   const handleWaitlistSubmit = async (e) => {
     e.preventDefault()
     setStatus("Processing...")
+<<<<<<< HEAD
     setIsSubmitting(true)
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
 
     try {
       const res = await fetch("/api/waitlist", {
@@ -124,6 +154,7 @@ export default function ContactPage() {
           teamSize: "",
           reason: ""
         })
+<<<<<<< HEAD
         setTimeout(() => setStatus(""), 6000)
       } else {
         const errorData = await res.json()
@@ -136,6 +167,16 @@ export default function ContactPage() {
       setTimeout(() => setStatus(""), 5000)
     } finally {
       setIsSubmitting(false)
+=======
+        setTimeout(() => setStatus(""), 5000)
+      } else {
+        setStatus("Error ❌")
+        setTimeout(() => setStatus(""), 3000)
+      }
+    } catch {
+      setStatus("Error ❌")
+      setTimeout(() => setStatus(""), 3000)
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
     }
   }
 
@@ -183,10 +224,14 @@ export default function ContactPage() {
             darkMode ? 'bg-slate-800' : 'bg-slate-100'
           }`}>
             <button
+<<<<<<< HEAD
               onClick={() => {
                 setActiveForm("contact")
                 setStatus("")
               }}
+=======
+              onClick={() => setActiveForm("contact")}
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
               className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
                 activeForm === "contact"
                   ? 'bg-green-600 text-white shadow-lg'
@@ -198,10 +243,14 @@ export default function ContactPage() {
               Contact Us
             </button>
             <button
+<<<<<<< HEAD
               onClick={() => {
                 setActiveForm("waitlist")
                 setStatus("")
               }}
+=======
+              onClick={() => setActiveForm("waitlist")}
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
               className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
                 activeForm === "waitlist"
                   ? 'bg-green-600 text-white shadow-lg'
@@ -299,13 +348,21 @@ export default function ContactPage() {
                       <input
                         type="text"
                         required
+<<<<<<< HEAD
                         disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         value={contactForm.name}
                         onChange={(e) => setContactForm({ ...contactForm, name: e.target.value })}
                         className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all ${
                           darkMode 
+<<<<<<< HEAD
                             ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                             : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                            ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                            : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         }`}
                         placeholder="Your name"
                       />
@@ -319,13 +376,21 @@ export default function ContactPage() {
                       <input
                         type="email"
                         required
+<<<<<<< HEAD
                         disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         value={contactForm.email}
                         onChange={(e) => setContactForm({ ...contactForm, email: e.target.value })}
                         className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all ${
                           darkMode 
+<<<<<<< HEAD
                             ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                             : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                            ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                            : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         }`}
                         placeholder="your@email.com"
                       />
@@ -338,13 +403,21 @@ export default function ContactPage() {
                       </label>
                       <input
                         type="text"
+<<<<<<< HEAD
                         disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         value={contactForm.company}
                         onChange={(e) => setContactForm({ ...contactForm, company: e.target.value })}
                         className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all ${
                           darkMode 
+<<<<<<< HEAD
                             ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                             : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                            ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                            : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         }`}
                         placeholder="Company name"
                       />
@@ -357,13 +430,21 @@ export default function ContactPage() {
                       </label>
                       <select
                         required
+<<<<<<< HEAD
                         disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         value={contactForm.division}
                         onChange={(e) => setContactForm({ ...contactForm, division: e.target.value, service: "" })}
                         className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all ${
                           darkMode 
+<<<<<<< HEAD
                             ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                             : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                            ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                            : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         }`}
                       >
                         <option value="Studio">Venture Studio</option>
@@ -378,13 +459,21 @@ export default function ContactPage() {
                       </label>
                       <select
                         required
+<<<<<<< HEAD
                         disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         value={contactForm.service}
                         onChange={(e) => setContactForm({ ...contactForm, service: e.target.value })}
                         className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all ${
                           darkMode 
+<<<<<<< HEAD
                             ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                             : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                            ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                            : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         }`}
                       >
                         <option value="">Select a service</option>
@@ -401,13 +490,21 @@ export default function ContactPage() {
                           Budget
                         </label>
                         <select
+<<<<<<< HEAD
                           disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                           value={contactForm.budget}
                           onChange={(e) => setContactForm({ ...contactForm, budget: e.target.value })}
                           className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all ${
                             darkMode 
+<<<<<<< HEAD
                               ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                               : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                              ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                              : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                           }`}
                         >
                           <option value="">Select range</option>
@@ -423,13 +520,21 @@ export default function ContactPage() {
                           Timeline
                         </label>
                         <select
+<<<<<<< HEAD
                           disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                           value={contactForm.timeline}
                           onChange={(e) => setContactForm({ ...contactForm, timeline: e.target.value })}
                           className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all ${
                             darkMode 
+<<<<<<< HEAD
                               ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                               : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                              ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                              : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                           }`}
                         >
                           <option value="">Select timeline</option>
@@ -449,13 +554,21 @@ export default function ContactPage() {
                       <textarea
                         required
                         rows={4}
+<<<<<<< HEAD
                         disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         value={contactForm.message}
                         onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })}
                         className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all resize-none ${
                           darkMode 
+<<<<<<< HEAD
                             ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                             : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                            ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                            : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         }`}
                         placeholder="Tell us about your project..."
                       />
@@ -464,6 +577,7 @@ export default function ContactPage() {
                     {/* Submit Button */}
                     <motion.button
                       type="submit"
+<<<<<<< HEAD
                       disabled={isSubmitting}
                       whileHover={!isSubmitting ? { scale: 1.02 } : {}}
                       whileTap={!isSubmitting ? { scale: 0.98 } : {}}
@@ -474,6 +588,13 @@ export default function ContactPage() {
                       }`}
                     >
                       {isSubmitting ? 'Sending...' : 'Send Message'}
+=======
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="w-full px-8 py-4 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-all shadow-lg"
+                    >
+                      Send Message
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                     </motion.button>
 
                     {/* Status */}
@@ -481,6 +602,7 @@ export default function ContactPage() {
                       <motion.div
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
                         className={`p-4 rounded-lg text-center font-medium ${
                           status.includes("✅") 
                             ? darkMode 
@@ -489,6 +611,10 @@ export default function ContactPage() {
                             : darkMode
                               ? "bg-red-900/30 text-red-400 border border-red-800"
                               : "bg-red-100 text-red-700"
+=======
+                        className={`text-center font-medium ${
+                          status.includes("✅") ? "text-green-600" : "text-red-600"
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                         }`}
                       >
                         {status}
@@ -541,13 +667,21 @@ export default function ContactPage() {
                     <input
                       type="text"
                       required
+<<<<<<< HEAD
                       disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                       value={waitlistForm.name}
                       onChange={(e) => setWaitlistForm({ ...waitlistForm, name: e.target.value })}
                       className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all ${
                         darkMode 
+<<<<<<< HEAD
                           ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                           : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                          ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                          : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                       }`}
                       placeholder="Your name"
                     />
@@ -561,13 +695,21 @@ export default function ContactPage() {
                     <input
                       type="email"
                       required
+<<<<<<< HEAD
                       disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                       value={waitlistForm.email}
                       onChange={(e) => setWaitlistForm({ ...waitlistForm, email: e.target.value })}
                       className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all ${
                         darkMode 
+<<<<<<< HEAD
                           ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                           : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                          ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                          : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                       }`}
                       placeholder="your@email.com"
                     />
@@ -580,13 +722,21 @@ export default function ContactPage() {
                     </label>
                     <input
                       type="text"
+<<<<<<< HEAD
                       disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                       value={waitlistForm.company}
                       onChange={(e) => setWaitlistForm({ ...waitlistForm, company: e.target.value })}
                       className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all ${
                         darkMode 
+<<<<<<< HEAD
                           ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                           : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                          ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                          : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                       }`}
                       placeholder="Company name"
                     />
@@ -598,13 +748,21 @@ export default function ContactPage() {
                       Team Size <span className="text-slate-500">(optional)</span>
                     </label>
                     <select
+<<<<<<< HEAD
                       disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                       value={waitlistForm.teamSize}
                       onChange={(e) => setWaitlistForm({ ...waitlistForm, teamSize: e.target.value })}
                       className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all ${
                         darkMode 
+<<<<<<< HEAD
                           ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                           : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                          ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                          : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                       }`}
                     >
                       <option value="">Select team size</option>
@@ -623,13 +781,21 @@ export default function ContactPage() {
                     </label>
                     <textarea
                       rows={4}
+<<<<<<< HEAD
                       disabled={isSubmitting}
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                       value={waitlistForm.reason}
                       onChange={(e) => setWaitlistForm({ ...waitlistForm, reason: e.target.value })}
                       className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none transition-all resize-none ${
                         darkMode 
+<<<<<<< HEAD
                           ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white disabled:opacity-50' 
                           : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900 disabled:opacity-50'
+=======
+                          ? 'bg-slate-900 border-slate-700 focus:border-green-500 text-white' 
+                          : 'bg-slate-50 border-slate-200 focus:border-green-600 text-slate-900'
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                       }`}
                       placeholder="Tell us what excites you about Venturemond Workspace..."
                     />
@@ -638,6 +804,7 @@ export default function ContactPage() {
                   {/* Submit Button */}
                   <motion.button
                     type="submit"
+<<<<<<< HEAD
                     disabled={isSubmitting}
                     whileHover={!isSubmitting ? { scale: 1.02 } : {}}
                     whileTap={!isSubmitting ? { scale: 0.98 } : {}}
@@ -653,6 +820,16 @@ export default function ContactPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                       </svg>
                     )}
+=======
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="w-full px-8 py-4 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-all shadow-lg flex items-center justify-center gap-2"
+                  >
+                    <span>Join Waitlist</span>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                   </motion.button>
 
                   {/* Status */}
@@ -665,9 +842,13 @@ export default function ContactPage() {
                           ? darkMode 
                             ? "bg-green-900/30 text-green-400 border border-green-800" 
                             : "bg-green-100 text-green-700"
+<<<<<<< HEAD
                           : darkMode
                             ? "bg-red-900/30 text-red-400 border border-red-800"
                             : "bg-red-100 text-red-700"
+=======
+                          : "text-red-600"
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
                       }`}
                     >
                       {status}

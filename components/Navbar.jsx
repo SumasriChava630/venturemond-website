@@ -55,11 +55,14 @@ export default function Navbar() {
     setOpen(false)
   }
 
+<<<<<<< HEAD
   const navigateToPage = (path) => {
     router.push(path)
     setOpen(false)
   }
 
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
   return (
     <motion.nav
       initial={{ y: -20, opacity: 0 }}
@@ -96,13 +99,19 @@ export default function Navbar() {
           >
             Home
           </button>
+<<<<<<< HEAD
           
           <button 
             onClick={() => navigateToPage('/studio')}
+=======
+          <button 
+            onClick={() => scrollToSection('services')}
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
             className={`font-medium transition-colors cursor-pointer ${
               darkMode ? 'text-slate-300 hover:text-green-400' : 'text-slate-700 hover:text-green-600'
             }`}
           >
+<<<<<<< HEAD
             Studio
           </button>
           
@@ -115,6 +124,10 @@ export default function Navbar() {
             SaaS
           </button>
           
+=======
+            Services
+          </button>
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
           <button 
             onClick={() => scrollToSection('projects')}
             className={`font-medium transition-colors cursor-pointer ${
@@ -123,7 +136,10 @@ export default function Navbar() {
           >
             Projects
           </button>
+<<<<<<< HEAD
           
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
           <button 
             onClick={() => scrollToSection('about')}
             className={`font-medium transition-colors cursor-pointer ${
@@ -152,6 +168,7 @@ export default function Navbar() {
             )}
           </button>
 
+<<<<<<< HEAD
           {/* Blog Button */}
           <Link
             href="/blog"
@@ -163,6 +180,8 @@ export default function Navbar() {
             Blog
           </Link>
 
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
           {/* Careers Button */}
           <Link
             href="/careers"
@@ -242,13 +261,19 @@ export default function Navbar() {
             >
               Home
             </button>
+<<<<<<< HEAD
             
             <button 
               onClick={() => navigateToPage('/studio')}
+=======
+            <button 
+              onClick={() => scrollToSection('services')}
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
               className={`font-medium transition-colors py-2 text-left ${
                 darkMode ? 'text-slate-300 hover:text-green-400' : 'text-slate-700 hover:text-green-600'
               }`}
             >
+<<<<<<< HEAD
               Studio
             </button>
             
@@ -261,6 +286,10 @@ export default function Navbar() {
               SaaS
             </button>
             
+=======
+              Services
+            </button>
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
             <button 
               onClick={() => scrollToSection('projects')}
               className={`font-medium transition-colors py-2 text-left ${
@@ -269,7 +298,10 @@ export default function Navbar() {
             >
               Projects
             </button>
+<<<<<<< HEAD
             
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
             <button 
               onClick={() => scrollToSection('about')}
               className={`font-medium transition-colors py-2 text-left ${
@@ -303,6 +335,7 @@ export default function Navbar() {
               )}
             </button>
 
+<<<<<<< HEAD
             {/* Blog Link in Mobile */}
             <Link
               href="/blog"
@@ -314,6 +347,8 @@ export default function Navbar() {
               Blog
             </Link>
 
+=======
+>>>>>>> 8ded54a96397a5f36e757e5e6436b41c359eb694
             {/* Careers Link in Mobile */}
             <Link
               href="/careers"
