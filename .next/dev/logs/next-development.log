@@ -1,0 +1,13 @@
+[00:00:03.642] Server  LOG      ✓ Ready in 2.4s
+[00:00:06.751] Server  LOG      ○ Compiling /_not-found/page ...
+[00:00:13.283] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:14.759] Browser WARN    Image with src "/images/project/alpha.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:14.759] Browser WARN    Image with src "/images/project/beta.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:14.759] Browser WARN    Image with src "/images/project/gamma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:14.759] Browser WARN    Image with src "/images/about/about1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:18.775] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:11.367] Server  LOG      ✓ Compiled in 403ms
+[00:04:31.951] Browser WARN    Image with src "/images/project/alpha.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:31.951] Browser WARN    Image with src "/images/project/beta.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:31.951] Browser WARN    Image with src "/images/project/gamma.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:31.951] Browser WARN    Image with src "/images/about/about1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
